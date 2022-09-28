@@ -3,7 +3,8 @@ h1 {
   text-align: center;
 }
 
-p {
+p,
+ul {
   font-family: verdana;
   font-size: 20px;
   color: white;
