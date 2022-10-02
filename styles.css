@@ -21,7 +21,7 @@ canvas {
   top: 0;
   left: 0;
   z-index: -9999;
-  /*transform: rotateY(180deg);*/
+  transform: rotateY(180deg);
 }
 
 div {
@@ -35,7 +35,7 @@ div {
 .center {
   margin: auto;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 20pxg;
 }
 
 .left {
