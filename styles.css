@@ -7,6 +7,10 @@ ul {
   text-align: center;
 }
 
+.small {
+  font-size: small;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
