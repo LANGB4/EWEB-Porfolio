@@ -50,11 +50,6 @@ div {
   float: right;
 }
 
-.bottom {
-  position: center;
-  bottom: 0;
-}
-
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
@@ -73,11 +68,32 @@ div {
   }
 }
 
-img.wiggle {
-  display: inline-block;
+img.wiggleleft {
+  display: block;
   animation: wiggle 2.5s infinite;
+  margin-top: 20px;
+  float: left;
+  width: 30%;
+  /*border: 3px solid #73ad21;*/
+}
+
+img.wiggleright {
+  /*display: inline-block;*/
+  animation: wiggle 2s infinite;
+  margin-top: 20px;
+  float: right;
+  width: 30%;
+  /*border: 3px solid #73ad21;*/
 }
 
 img.wiggle:hover {
   animation: none;
+}
+
+img.middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
 }
