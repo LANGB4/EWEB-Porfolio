@@ -32,7 +32,7 @@ div {
   background-color: rgb(0, 0, 0);
   width: 300px;
   border: 1px solid rgb(0, 255, 0);
-  padding: 50px;
+  padding: 20px;
   margin: 20px;
 }
 
@@ -71,18 +71,18 @@ div {
 img.wiggleleft {
   display: block;
   animation: wiggle 2.5s infinite;
-  margin-top: 20px;
+  margin-top: 00px;
   float: left;
-  width: 30%;
+  width: 25%;
   /*border: 3px solid #73ad21;*/
 }
 
 img.wiggleright {
   /*display: inline-block;*/
   animation: wiggle 2s infinite;
-  margin-top: 20px;
+  margin-top: 00px;
   float: right;
-  width: 30%;
+  width: 25%;
   /*border: 3px solid #73ad21;*/
 }
 
@@ -95,5 +95,5 @@ img.middle {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  width: 90%;
+  width: 70%;
 }
