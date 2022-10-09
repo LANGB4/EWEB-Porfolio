@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  overflow: hidden;
+}
+
 h1,
 h2,
 p,
@@ -31,12 +36,11 @@ canvas {
 .flexcontainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .flexitem {
-  display: block;
   width: 300px;
   background-color: rgb(0, 0, 0);
   border: 1px solid rgb(0, 255, 0);
