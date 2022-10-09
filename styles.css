@@ -28,26 +28,20 @@ canvas {
   transform: rotateY(180deg);
 }
 
-div {
-  background-color: rgb(0, 0, 0);
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.flexitem {
+  display: block;
   width: 300px;
+  background-color: rgb(0, 0, 0);
   border: 1px solid rgb(0, 255, 0);
   padding: 20px;
   margin: 20px;
-}
-
-.center {
-  margin: auto;
-  margin-bottom: 20px;
-  margin-top: 20pxg;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
 }
 
 @keyframes wiggle {
