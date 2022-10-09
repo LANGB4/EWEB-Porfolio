@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 h1,
@@ -37,7 +37,7 @@ canvas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  overflow: auto;
 }
 
 .flexitem {
