@@ -3,12 +3,16 @@
   overflow: auto;
 }
 
+:root {
+  --color: rgb(0, 255, 0);
+}
+
 h1,
 h2,
 p,
 ul {
   font-family: verdana;
-  color: rgb(0, 255, 0);
+  color: var(--color);
   text-align: center;
 }
 
@@ -30,7 +34,7 @@ canvas {
   top: 0;
   left: 0;
   z-index: -9999;
-  transform: rotateY(180deg);
+  /*transform: rotateY(180deg);*/
 }
 
 .flexcontainer {
@@ -66,7 +70,7 @@ canvas {
   }
 }
 
-img.wiggleleft {
+img.wigglered {
   display: block;
   animation: wiggle 2.5s infinite;
   margin-top: 00px;
@@ -75,7 +79,7 @@ img.wiggleleft {
   /*border: 3px solid #73ad21;*/
 }
 
-img.wiggleright {
+img.wiggleblue {
   /*display: inline-block;*/
   animation: wiggle 2s infinite;
   margin-top: 00px;
@@ -84,7 +88,13 @@ img.wiggleright {
   /*border: 3px solid #73ad21;*/
 }
 
-img.wiggle:hover {
+img.wigglered:hover {
+  --color: rgb(255, 0, 0);
+  animation: none;
+}
+
+img.wiggleblue:hover {
+  --color: rgb(0, 0, 255);
   animation: none;
 }
 
