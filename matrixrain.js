@@ -1,5 +1,26 @@
-function changecol() {
-  console.log("changecol funtion called");
+const rgb = new Array((red = "255"), (green = "0"), (blue = "0"));
+console.log("const rgb:", rgb[0], rgb[1], rgb[2]);
+
+let color = "red";
+
+function raincolor(color) {
+  console.log("changecol funtion called. Input:", color);
+  if (color === "green") {
+    rgb[0] = "0";
+    rgb[1] = "255";
+    rgb[2] = "0";
+  } else if (color === "blue") {
+    rgb[0] = "0";
+    rgb[1] = "0";
+    rgb[2] = "255";
+  } else if (color === "red") {
+    rgb[0] = "255";
+    rgb[1] = "0";
+    rgb[2] = "0";
+  }
+
+  console.log("output:", color, "rgb:", rgb[0], rgb[1], rgb[2]);
+  return rgb;
 }
 
 function random(min = 0, max = 1) {

@@ -100,9 +100,9 @@
           "ﾇ",
           "ﾍ",
         ]),
-        (red = 0),
-        (green = 255),
-        (blue = 0),
+        (red = raincolor(color)[0]),
+        (green = raincolor(color)[1]),
+        (blue = raincolor(color)[2]),
         (randomColors = false),
         (flowRate = 1),
         (fps = 10)
@@ -159,7 +159,13 @@
           ,
           class="wiggle"
         >
-          <img src="red.jpg" width="100" class="wigglered" />
+          <img
+            src="red.jpg"
+            width="100"
+            class="wigglered"
+            onmouseenter="console.log('mouse in', color); color ='red'; "
+            onmouseleave="console.log('mouse out', color); color = 'green';"
+          />
         </a>
         <a
           class="wiggle"
@@ -179,11 +185,8 @@
             src="blue.jpg"
             width="100"
             class="wiggleblue"
-            id="blue"
-            onmouseenter="console.log('mouse in');
-            changecol();
-            "
-            onmouseleave="console.log('mouse out')"
+            onmouseenter="console.log('mouse in', color); color ='blue'; "
+            onmouseleave="console.log('mouse out', color); color = 'green';"
           />
         </a>
       </div>
