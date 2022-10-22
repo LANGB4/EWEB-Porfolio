@@ -1,7 +1,17 @@
-const rgb = new Array((red = "255"), (green = "0"), (blue = "0"));
-console.log("const rgb:", rgb[0], rgb[1], rgb[2]);
+const color = {
+  red: 0,
+  green: 255,
+  blue: 0,
+};
 
-let color = "blue";
+console.log(
+  "color: red:",
+  color.red,
+  "green:",
+  color.green,
+  "blue:",
+  color.blue
+);
 
 function raincolor(color) {
   console.log("changecol funtion called. Input:", color);

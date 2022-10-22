@@ -7,6 +7,86 @@
     <script src="matrixrain.js"></script>
   </head>
   <body>
+    <div class="flexcontainer">
+      <div class="flexitem">
+        <h1>LANGB4</h1>
+        <p>WEB DEVELOPER</p>
+      </div>
+    </div>
+    <div class="flexcontainer">
+      <div class="flexitem">
+        <h2>LANGUAGES:</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVA SCRIPT</li>
+        </ul>
+      </div>
+
+      <div class="flexitem">
+        <h2>SKILLS:</h2>
+        <ul>
+          <li>HAVE FUN</li>
+          <li>GOOGLE SEARCH</li>
+          <li>COPY-PASTE</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flexcontainer">
+      <div class="flexitem">
+        <p class="small">
+          “This is your last chance. After this, there is no turning back. You
+          click the blue pill – the story ends, you wake up in your bed and
+          believe whatever you want to believe. You click the red pill – you
+          stay in Wonderland, and I show you how deep the rabbit hole goes.
+          Remember, all I'm offering is the truth – nothing more.”
+        </p>
+        <img src="Morpheus.jpg" class="middle" />
+        <a
+          class="wiggle"
+          ,
+          href="https://github.com/LANGB4"
+          ,
+          title="Learn the truth"
+          ,
+          target="_blank"
+          ,
+          class="wiggle"
+        >
+          <img
+            src="red.jpg"
+            width="100"
+            class="wigglered"
+            onmouseenter="color.red = 255; color.green = 0; console.log('mouse in', color); "
+            onmouseleave=" color.red = 0; color.green = 255;console.log('mouse out', color);"
+          />
+        </a>
+        <a
+          class="wiggle"
+          ,
+          href="https://www.youtube.com/results?search_query=cat+funny"
+          ,
+          title="Live in illusion"
+          href="https://github.com/LANGB4"
+          ,
+          title="Learn the truth"
+          ,
+          target="_blank"
+          ,
+          class="wiggle"
+        >
+          <img
+            src="blue.jpg"
+            width="100"
+            class="wiggleblue"
+            onmouseenter="color.blue = 255; color.green = 0; console.log('mouse in', color); "
+            onmouseleave=" color.blue = 0; color.green = 255;console.log('mouse out', color);"
+          />
+        </a>
+      </div>
+    </div>
+
     <canvas id="canvas"></canvas>
     <script>
       console.log("rgb set");
@@ -100,9 +180,9 @@
           "ﾇ",
           "ﾍ",
         ]),
-        (red = raincolor(color)[0]),
-        (green = raincolor(color)[1]),
-        (blue = raincolor(color)[2]),
+        (red = color.red),
+        (green = color.green),
+        (blue = color.blue),
         (randomColors = false),
         (flowRate = 1),
         (fps = 10)
@@ -111,85 +191,5 @@
         matrixRain.setCanvasDimensions(window.innerWidth, window.innerHeight);
       });
     </script>
-
-    <div class="flexcontainer">
-      <div class="flexitem">
-        <h1>LANGB4</h1>
-        <p>WEB DEVELOPER</p>
-      </div>
-    </div>
-    <div class="flexcontainer">
-      <div class="flexitem">
-        <h2>LANGUAGES:</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JAVA SCRIPT</li>
-        </ul>
-      </div>
-
-      <div class="flexitem">
-        <h2>SKILLS:</h2>
-        <ul>
-          <li>HAVE FUN</li>
-          <li>GOOGLE SEARCH</li>
-          <li>COPY-PASTE</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="flexcontainer">
-      <div class="flexitem">
-        <p class="small">
-          “This is your last chance. After this, there is no turning back. You
-          click the blue pill – the story ends, you wake up in your bed and
-          believe whatever you want to believe. You click the red pill – you
-          stay in Wonderland, and I show you how deep the rabbit hole goes.
-          Remember, all I'm offering is the truth – nothing more.”
-        </p>
-        <img src="Morpheus.jpg" class="middle" />
-        <a
-          class="wiggle"
-          ,
-          href="https://github.com/LANGB4"
-          ,
-          title="Learn the truth"
-          ,
-          target="_blank"
-          ,
-          class="wiggle"
-        >
-          <img
-            src="red.jpg"
-            width="100"
-            class="wigglered"
-            onmouseenter="color ='red'; console.log('mouse in', color); "
-            onmouseleave=" color = 'green';console.log('mouse out', color);"
-          />
-        </a>
-        <a
-          class="wiggle"
-          ,
-          href="https://www.youtube.com/results?search_query=cat+funny"
-          ,
-          title="Live in illusion"
-          href="https://github.com/LANGB4"
-          ,
-          title="Learn the truth"
-          ,
-          target="_blank"
-          ,
-          class="wiggle"
-        >
-          <img
-            src="blue.jpg"
-            width="100"
-            class="wiggleblue"
-            onmouseenter="color ='blue'; console.log('mouse in', color); "
-            onmouseleave=" color = 'green';console.log('mouse out', color);"
-          />
-        </a>
-      </div>
-    </div>
   </body>
 </html>
