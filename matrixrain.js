@@ -13,26 +13,6 @@ console.log(
   color.blue
 );
 
-function raincolor(color) {
-  console.log("changecol funtion called. Input:", color);
-  if (color === "green") {
-    rgb[0] = "0";
-    rgb[1] = "255";
-    rgb[2] = "0";
-  } else if (color === "blue") {
-    rgb[0] = "0";
-    rgb[1] = "0";
-    rgb[2] = "255";
-  } else if (color === "red") {
-    rgb[0] = "255";
-    rgb[1] = "0";
-    rgb[2] = "0";
-  }
-
-  console.log("output:", color, "rgb:", rgb[0], rgb[1], rgb[2]);
-  return rgb;
-}
-
 function random(min = 0, max = 1) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }

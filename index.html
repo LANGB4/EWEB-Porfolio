@@ -58,8 +58,8 @@
             src="red.jpg"
             width="100"
             class="wigglered"
-            onmouseenter="color.red = 255; color.green = 0; console.log('mouse in', color); "
-            onmouseleave=" color.red = 0; color.green = 255;console.log('mouse out', color);"
+            onmouseenter="matrixRain.color.red = 255; matrixRain.color.green = 0; console.log('mouse in', color); "
+            onmouseleave=" matrixRain.color.red = 0; matrixRain.color.green = 255;console.log('mouse out', color);"
           />
         </a>
         <a
@@ -80,8 +80,8 @@
             src="blue.jpg"
             width="100"
             class="wiggleblue"
-            onmouseenter="color.blue = 255; color.green = 0; console.log('mouse in', color); "
-            onmouseleave=" color.blue = 0; color.green = 255;console.log('mouse out', color);"
+            onmouseenter=" matrixRain.color.blue = 255; matrixRain.color.green = 0; console.log('mouse in', color); "
+            onmouseleave=" matrixRain.color.blue = 0; matrixRain.color.green = 255;console.log('mouse out', color);"
           />
         </a>
       </div>
@@ -89,7 +89,7 @@
 
     <canvas id="canvas"></canvas>
     <script>
-      console.log("rgb set");
+      console.log("rain init");
       const matrixRain = new MatrixRain(
         (element = document.getElementById("canvas")),
         (width = window.innerWidth),
