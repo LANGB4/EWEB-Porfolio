@@ -58,13 +58,8 @@
             src="red.jpg"
             width="100"
             class="wigglered"
-            onmouseenter="matrixRain.color.red = 255;
-            matrixRain.color.green = 0; 
-            document.documentElement.style.setProperty('--color', 'rgb(255, 0, 0)');
-            console.log('mouse in, matrixRain:', matrixRain.color, 'style:', getComputedStyle(element).getPropertyValue('--color') );"
-            onmouseleave=" matrixRain.color.red = 0; matrixRain.color.green = 255;
-            document.documentElement.style.setProperty('--color', 'rgb(0, 255, 0)');
-            console.log('mouse out, matrixRain:', matrixRain.color, 'style:', getComputedStyle(element).getPropertyValue('--color'));"
+            onmouseenter="changeColor('red');"
+            onmouseleave="changeColor('green');"
           />
         </a>
         <a
@@ -85,14 +80,8 @@
             src="blue.jpg"
             width="100"
             class="wiggleblue"
-            onmouseenter=" matrixRain.color.blue = 255;
-            matrixRain.color.green = 0;
-            document.documentElement.style.setProperty('--color', 'rgb(0, 0, 255)');
-            console.log('mouse in, matrixRain:', matrixRain.color, 'style:', getComputedStyle(element).getPropertyValue('--color')); "
-            onmouseleave=" matrixRain.color.blue = 0;
-             matrixRain.color.green = 255;
-             document.documentElement.style.setProperty('--color', 'rgb(0,255, 0)');
-             console.log('mouse out, matrixRain:', matrixRain.color, 'style:', getComputedStyle(element).getPropertyValue('--color'));"
+            onmouseenter="changeColor('blue');"
+            onmouseleave="changeColor('green');"
           />
         </a>
       </div>
