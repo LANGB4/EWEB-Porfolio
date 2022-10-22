@@ -1,3 +1,5 @@
+// Own Code
+
 function changeColor(color) {
   if (color === "red") {
     matrixRain.color.red = 255;
@@ -40,6 +42,8 @@ function changeColor(color) {
     );
   }
 }
+
+//Code from "Matrixrain"
 
 function random(min = 0, max = 1) {
   return Math.floor(Math.random() * (max - min + 1) + min);
