@@ -1,18 +1,3 @@
-const color = {
-  red: 0,
-  green: 255,
-  blue: 0,
-};
-
-console.log(
-  "color: red:",
-  color.red,
-  "green:",
-  color.green,
-  "blue:",
-  color.blue
-);
-
 function random(min = 0, max = 1) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
