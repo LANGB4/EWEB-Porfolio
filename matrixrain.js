@@ -7,39 +7,20 @@ function changeColor(color) {
     matrixRain.color.blue = 0;
 
     document.documentElement.style.setProperty("--color", "rgb(255, 0, 0)");
-
-    console.log(
-      "mouse in, matrixRain:",
-      matrixRain.color,
-      "style:",
-      getComputedStyle(element).getPropertyValue("--color")
-    );
   } else if (color === "green") {
     matrixRain.color.red = 0;
     matrixRain.color.green = 255;
     matrixRain.color.blue = 0;
 
     document.documentElement.style.setProperty("--color", "rgb(0, 255, 0)");
-
-    console.log(
-      "mouse in, matrixRain:",
-      matrixRain.color,
-      "style:",
-      getComputedStyle(element).getPropertyValue("--color")
-    );
   } else if (color === "blue") {
     matrixRain.color.red = 0;
     matrixRain.color.green = 0;
     matrixRain.color.blue = 255;
 
     document.documentElement.style.setProperty("--color", "rgb(0, 0, 255)");
-
-    console.log(
-      "mouse in, matrixRain:",
-      matrixRain.color,
-      "style:",
-      getComputedStyle(element).getPropertyValue("--color")
-    );
+  } else {
+    throw Error("invalid color, choose green, red or blue");
   }
 }
 
