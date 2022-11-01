@@ -1,5 +1,21 @@
 // Own Code
 
+class Owen {
+  constructor() {
+    fetch("https://owen-wilson-wow-api.herokuapp.com/wows/random")
+      .then((response) => response.json())
+      .then((data) => {
+        this.data = data;
+        console.log("data:", this.data);
+      });
+
+    console.log("this.data:", this.data, "this:", this);
+  }
+}
+
+const owen1 = new Owen();
+console.log("owenobject:", owen1);
+
 function changeColor(color) {
   if (color === "red") {
     matrixRain.color.red = 255;
