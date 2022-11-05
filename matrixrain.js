@@ -1,20 +1,18 @@
-// Own Code
+url = "https://owen-wilson-wow-api.onrender.com/wows/random";
 
-class Owen {
-  constructor() {
-    fetch("https://owen-wilson-wow-api.herokuapp.com/wows/random")
-      .then((response) => response.json())
-      .then((data) => {
-        this.data = data;
-        console.log("data:", this.data);
-      });
-
-    console.log("this.data:", this.data, "this:", this);
-  }
+async function getWow() {
+  const res = await fetch(url);
+  const json = await res.json();
+  console.log("JSON", json);
+  const wowArray = json;
+  return wowArray;
 }
 
-const owen1 = new Owen();
-console.log("owenobject:", owen1);
+const wow = getWow();
+console.log(
+  "wow:",
+  wow.then((value) => console.log(value))
+);
 
 function changeColor(color) {
   if (color === "red") {
