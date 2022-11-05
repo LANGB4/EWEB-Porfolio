@@ -1,18 +1,11 @@
 url = "https://owen-wilson-wow-api.onrender.com/wows/random";
 
-async function getWow() {
-  const res = await fetch(url);
-  const json = await res.json();
-  console.log("JSON", json);
-  const wowArray = json;
-  return wowArray;
-}
+const options = { method: "GET", headers: { accept: "application/json" } };
 
-const wow = getWow();
-console.log(
-  "wow:",
-  wow.then((value) => console.log(value))
-);
+fetch(url, options)
+  .then((response) => response.json())
+  .then((response) => console.log(response))
+  .catch((err) => console.error(err));
 
 function changeColor(color) {
   if (color === "red") {
