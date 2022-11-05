@@ -13,6 +13,8 @@ wow = fetch(url, options)
 
 wow.then(function (value) {
   console.log("audio-value:", value["audio"]);
+  audio = value["audio"];
+  return audio;
 });
 
 function changeColor(color) {
