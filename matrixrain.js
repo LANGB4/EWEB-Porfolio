@@ -11,11 +11,14 @@ wow = fetch(url, options)
   })
   .catch((err) => console.error(err));
 
-wow.then(function (value) {
-  console.log("audio-value:", value["audio"]);
-  audio = value["audio"];
-  return audio;
-});
+function getWow() {
+  wow.then(function (value) {
+    console.log("audio-value:", value["audio"]);
+    document.getElementById("audio").innerHTML = value["audio"];
+  });
+}
+
+//--------------------------------------------------------
 
 function changeColor(color) {
   if (color === "red") {
