@@ -6,15 +6,14 @@
     <link rel="icon" type="image/x-icon" href="favicon.jpg" />
     <script src="matrixrain.js"></script>
   </head>
-  <body>
-    <audio id="wow" controls="controls" onended="loadWow()"></audio>
+  <body onload="getWow()">
     <div class="flexcontainer">
       <div class="flexitem">
         <h1>LANGB4</h1>
         <p>WEB DEVELOPER</p>
-        <p id="demo"></p>
       </div>
     </div>
+
     <div class="flexcontainer">
       <div class="flexitem">
         <h2>LANGUAGES:</h2>
@@ -78,6 +77,14 @@
             onmouseleave="changeColor('green');"
           />
         </a>
+      </div>
+    </div>
+
+    <div class="flexcontainer">
+      <div class="flexitem">
+        <p id="wowText"></p>
+        <br />
+        <audio id="wow" controls="controls" onended="getWow()"></audio>
       </div>
     </div>
 

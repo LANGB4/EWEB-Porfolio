@@ -5,23 +5,14 @@ const options = {
   headers: { accept: "application/json" },
 };
 
-fetch(url, options)
-  .then((response) => response.json())
-  .then((response) => {
-    data = response[0];
-    //console.log("data:", data["audio"]);
-    document.getElementById("wow").setAttribute("src", data["audio"]);
-  })
-  .catch((err) => console.error(err));
-
-function loadWow() {
-  console.log("loadWow() called");
+function getWow() {
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
       data = response[0];
-      //console.log("data:", data["audio"]);
+      console.log("data:", data);
       document.getElementById("wow").setAttribute("src", data["audio"]);
+      document.getElementById("wowText").innerHTML = data["full_line"];
     })
     .catch((err) => console.error(err));
 }
