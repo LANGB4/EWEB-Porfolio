@@ -1,3 +1,18 @@
+url = "https://owen-wilson-wow-api.onrender.com/wows/random";
+
+const options = {
+  method: "GET",
+  headers: { accept: "application/json" },
+};
+
+fetch(url, options)
+  .then((response) => response.json())
+  .then((response) => {
+    data = response[0];
+    document.getElementById("wow").setAttribute("src", data["audio"]);
+  })
+  .catch((err) => console.error(err));
+
 //--------------------------------------------------------
 
 function changeColor(color) {

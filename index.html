@@ -7,32 +7,7 @@
     <script src="matrixrain.js"></script>
   </head>
   <body>
-    <script>
-      url = "https://owen-wilson-wow-api.onrender.com/wows/random";
-
-      const options = {
-        method: "GET",
-        headers: { accept: "application/json" },
-      };
-
-      wow = fetch(url, options)
-        .then((response) => response.json())
-        .then((response) => {
-          data = response[0];
-          console.log("data:", data);
-          return data;
-        })
-        .catch((err) => console.error(err));
-
-      wow.then(function (value) {
-        console.log("audio-value:", value["audio"]);
-
-        document.getElementById("wow").setAttribute("src", value["audio"]);
-      });
-    </script>
-    <audio id="wow" loop="loop" controls="controls">
-      <source src="" type="audio/mpeg" />
-    </audio>
+    <audio id="wow" loop="loop" controls="controls"></audio>
     <div class="flexcontainer">
       <div class="flexitem">
         <h1>LANGB4</h1>
