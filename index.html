@@ -7,9 +7,33 @@
     <script src="matrixrain.js"></script>
   </head>
   <body>
+    <script>
+      url = "https://owen-wilson-wow-api.onrender.com/wows/random";
+
+      const options = {
+        method: "GET",
+        headers: { accept: "application/json" },
+      };
+
+      wow = fetch(url, options)
+        .then((response) => response.json())
+        .then((response) => {
+          data = response[0];
+          console.log("data:", data);
+          return data;
+        })
+        .catch((err) => console.error(err));
+
+      wow.then(function (value) {
+        console.log("audio-value:", value["audio"]);
+
+        document.getElementById("wow").setAttribute("src", value["audio"]);
+      });
+    </script>
     <audio loop="loop" controls="controls">
       <source
-        src="https://assets.ctfassets.net/bs8ntwkklfua/6CTECWjXKpX9cQsyAsZucB/0aaa6cc30fd1e98c001a75f57f3f1705/Marmaduke_Wow_4.mp3"
+        id="wow"
+        src="https://assets.ctfassets.net/bs8ntwkklfua/7mZxDvl1IsR95NAg8mKj0t/43a0b44fd325c1de3f86cf6cec3a80d5/Hall_Pass_Wow_6.mp3"
         type="audio/mpeg"
       />
     </audio>
@@ -18,28 +42,6 @@
         <h1>LANGB4</h1>
         <p>WEB DEVELOPER</p>
         <p id="demo"></p>
-        <script>
-          url = "https://owen-wilson-wow-api.onrender.com/wows/random";
-
-          const options = {
-            method: "GET",
-            headers: { accept: "application/json" },
-          };
-
-          wow = fetch(url, options)
-            .then((response) => response.json())
-            .then((response) => {
-              data = response[0];
-              console.log("data:", data);
-              return data;
-            })
-            .catch((err) => console.error(err));
-
-          wow.then(function (value) {
-            console.log("audio-value:", value["audio"]);
-            document.getElementById("demo").innerHTML = value["audio"];
-          });
-        </script>
       </div>
     </div>
     <div class="flexcontainer">
