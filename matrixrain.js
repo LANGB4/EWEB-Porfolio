@@ -9,6 +9,7 @@ fetch(url, options)
   .then((response) => response.json())
   .then((response) => {
     data = response[0];
+    //console.log("data:", data["audio"]);
     document.getElementById("wow").setAttribute("src", data["audio"]);
   })
   .catch((err) => console.error(err));
