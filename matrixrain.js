@@ -13,6 +13,8 @@ function getWow() {
       console.log("data:", data);
       document.getElementById("wow").setAttribute("src", data["audio"]);
       document.getElementById("wowText").innerHTML = data["full_line"];
+      document.getElementById("wowRef").innerHTML =
+        "- " + data["movie"] + ", " + data["year"];
     })
     .catch((err) => console.error(err));
 }
