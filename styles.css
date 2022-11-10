@@ -35,7 +35,6 @@ canvas {
   top: 0;
   left: 0;
   z-index: -9999;
-  /*transform: rotateY(180deg);*/
 }
 
 .flexcontainer {
@@ -55,7 +54,6 @@ canvas {
 
 .flexitem:hover {
   padding: 25px;
-  border: 2px solid var(--color);
 }
 
 @keyframes wiggle {
@@ -82,16 +80,13 @@ img.wigglered {
   margin-top: 00px;
   float: left;
   width: 25%;
-  /*border: 3px solid #73ad21;*/
 }
 
 img.wiggleblue {
-  /*display: inline-block;*/
   animation: wiggle 2s infinite;
   margin-top: 00px;
   float: right;
   width: 25%;
-  /*border: 3px solid #73ad21;*/
 }
 
 img.wigglered:hover {
