@@ -1,3 +1,5 @@
+// Own code
+
 url = "https://owen-wilson-wow-api.onrender.com/wows/random";
 
 const options = {
@@ -18,7 +20,6 @@ function getWow() {
     })
     .catch((err) => console.error(err));
 }
-//--------------------------------------------------------
 
 function changeColor(color) {
   if (color === "red") {
