@@ -9,7 +9,7 @@ langb4@bfh.ch
 
 ## What is this Website?
 
-For the course EWEB this portfolio page was created.<br>
+This portfolio was created in the course EWEB - Web Engineering.<br>
 It highlights skills accuired in the lecture, including:
 
 - HTML
