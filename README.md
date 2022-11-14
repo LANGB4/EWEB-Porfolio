@@ -19,7 +19,7 @@ It highlights skills accuired in the lecture, including:
 - Online Marketing
 - Features and Technologies
 
-## Where did i get it from?
+## Where did I get it from?
 
 Unfortunatly not all Code came from me :/ <br>
 All references used to realise this web site are listed here :
