@@ -1,5 +1,27 @@
-# EWEB-Porfolio
+# EWEB-Porfolio LANGB4
 
+# Who am I?
+
+I am a Business IT student at BFH in Bern, Switzerland.
+If you like my page and have a job opening, feel free to contact me:
+
+- langb4@bfh.ch
+
+# What is this Website?
+
+For the course EWEB this portfolio page was created.
+It highlights skills accuired in the lecture, including:
+
+- HTML
+- CSS
+- Java Script
+- APIs
+- Online Marketing
+- Features and Technologies
+
+# Where did i get it from?
+
+Unfortunatly not all Code came from me :/
 All references used to realise this web site are listed here :
 
 Matrix rain from jordanbkatz:
