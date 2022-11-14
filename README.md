@@ -2,14 +2,14 @@
 
 ## Who am I?
 
-I am a Business IT student at BFH in Bern, Switzerland./n
+I am a Business IT student at BFH in Bern, Switzerland. <br>
 If you like my page and have a job opening, feel free to contact me:
 
 langb4@bfh.ch
 
 ## What is this Website?
 
-For the course EWEB this portfolio page was created./n
+For the course EWEB this portfolio page was created.
 It highlights skills accuired in the lecture, including:
 
 - HTML
