@@ -1,15 +1,15 @@
 # EWEB-Porfolio LANGB4
 
-# Who am I?
+## Who am I?
 
-I am a Business IT student at BFH in Bern, Switzerland.
+I am a Business IT student at BFH in Bern, Switzerland./n
 If you like my page and have a job opening, feel free to contact me:
 
-- langb4@bfh.ch
+langb4@bfh.ch
 
-# What is this Website?
+## What is this Website?
 
-For the course EWEB this portfolio page was created.
+For the course EWEB this portfolio page was created./n
 It highlights skills accuired in the lecture, including:
 
 - HTML
@@ -19,18 +19,18 @@ It highlights skills accuired in the lecture, including:
 - Online Marketing
 - Features and Technologies
 
-# Where did i get it from?
+## Where did i get it from?
 
-Unfortunatly not all Code came from me :/
+Unfortunatly not all Code came from me :/ /n
 All references used to realise this web site are listed here :
 
-Matrix rain from jordanbkatz:
+Matrix rain from jordanbkatz: /n
 https://www.cssscript.com/matrix-digital-rain/
 
-Wiggle effect from Woodrow Barlow via stackoverflow:
+Wiggle effect from Woodrow Barlow via stackoverflow:/n
 https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect
 
-Morpheus picture via google search:
+Morpheus picture via google search:/n
 http://davidmmasters.com/wp-content/uploads/2017/04/red-pill-of-awareness-or-blue-pill-of-unconsciousness.jpg
 
 Owen wilson API:
