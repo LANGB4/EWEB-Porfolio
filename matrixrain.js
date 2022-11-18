@@ -7,6 +7,7 @@ function getWow() {
     method: "GET",
     headers: { accept: "application/json" },
   };
+
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
