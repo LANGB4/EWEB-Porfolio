@@ -1,19 +1,18 @@
 // Own code
 
-url = "https://owen-wilson-wow-api.onrender.com/wows/random";
-
-const options = {
-  method: "GET",
-  headers: { accept: "application/json" },
-};
-
 function getWow() {
+  url = "https://owen-wilson-wow-api.onrender.com/wows/random";
+
+  const options = {
+    method: "GET",
+    headers: { accept: "application/json" },
+  };
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
       data = response[0];
       console.log("data:", data);
-      document.getElementById("wow").setAttribute("src", data["audio"]);
+      document.getElementById("wowAudio").setAttribute("src", data["audio"]);
       document.getElementById("wowText").innerHTML = data["full_line"];
       document.getElementById("wowRef").innerHTML =
         "- " + data["movie"] + ", " + data["year"];
