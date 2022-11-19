@@ -84,7 +84,11 @@
     </div>
 
     <div class="flexcontainer">
-      <div class="flexitem">
+      <div
+        class="flexitem"
+        onmouseenter="changeColor('random');"
+        onmouseleave="changeColor('green');"
+      >
         <p id="wowText"></p>
         <br />
         <audio id="wowAudio" controls="controls" onended="getWow()"></audio>

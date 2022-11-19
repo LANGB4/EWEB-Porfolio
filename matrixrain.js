@@ -26,22 +26,22 @@ function changeColor(color) {
     matrixRain.color.red = 255;
     matrixRain.color.green = 0;
     matrixRain.color.blue = 0;
-
     document.documentElement.style.setProperty("--color", "rgb(255, 0, 0)");
   } else if (color === "green") {
+    matrixRain.randomColors = false;
     matrixRain.color.red = 0;
     matrixRain.color.green = 255;
     matrixRain.color.blue = 0;
-
     document.documentElement.style.setProperty("--color", "rgb(0, 255, 0)");
   } else if (color === "blue") {
     matrixRain.color.red = 0;
     matrixRain.color.green = 0;
     matrixRain.color.blue = 255;
-
     document.documentElement.style.setProperty("--color", "rgb(0, 0, 255)");
+  } else if (color === "random") {
+    matrixRain.randomColors = true;
   } else {
-    throw Error("invalid color, choose green, red or blue");
+    throw Error("invalid color, choose green, red, blue or random");
   }
 }
 

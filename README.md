@@ -39,3 +39,8 @@ http://davidmmasters.com/wp-content/uploads/2017/04/red-pill-of-awareness-or-blu
 <br>
 Owen wilson API from Avi Mamenko:<br>
 https://owen-wilson-wow-api.herokuapp.com/
+
+## Known Bugs
+
+- Background animation mirrors letters at random
+- Mobile view is not optimized fully
