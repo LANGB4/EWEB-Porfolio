@@ -42,5 +42,6 @@ https://owen-wilson-wow-api.herokuapp.com/
 
 ## Known Bugs
 
-- Background animation mirrors letters at random
+- Background animation mirrors letters at random <br>
+  --> Workaround: Change window size to reload
 - Mobile view is not optimized fully
